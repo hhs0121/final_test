@@ -240,6 +240,44 @@ class Page5(tk.Frame):
         button2.grid(row=5, column=1, padx=10, pady=10)
 
 
+# mbti 결정 함수
+
+# def mbti_test_EI(m, b, t, i):
+#     print("\n당신의 MBTI는 {}{}{}{}입니다.\n".format(m,b,t,i))
+#     if m == "E" and b == "S" and t == "T" and i == "J":
+#         print("▷ ESTJ_사업가형 : 사무적, 실용적, 현실적인 스타일\n▷ 나와 가장 잘 맞는 MBTI는? : INFP\n▷ 나와 가장 잘 안맞는 MBTI는? : INFJ")
+#     elif m == "E" and b == "N" and t == "T" and i == "J":
+#         print("▷ ENTJ_지도자형 : 비전을 갖고 타인을 활력적으로 인도\n▷ 나와 가장 잘 맞는 MBTI는? : ISFP\n▷ 나와 가장 잘 안맞는 MBTI는? : ISFJ")
+#     elif m == "E" and b == "N" and t == "T" and i == "P":
+#         print("▷ ENTP_발명가형 : 풍부한 상상력으로 새로운 것에 도전\n▷ 나와 가장 잘 맞는 MBTI는? : ISFJ\n▷ 나와 가장 잘 안맞는 MBTI는? : ISFP")
+#     elif m == "I" and b == "N" and t == "T" and i == "J":
+#         print("▷ INTJ_과학자형 : 전체를 조합하여 비전을 제시하는 사람\n▷ 나와 가장 잘 맞는 MBTI는? : ESFP\n▷ 나와 가장 잘 안맞는 MBTI는? : ESFJ")
+#     elif m == "I" and b == "N" and t == "T" and i == "P":
+#         print("▷ INTP_아이디어형 : 비평적인 관점을 가진 뛰어난 전략가\n▷ 나와 가장 잘 맞는 MBTI는? : ESFJ\n▷ 나와 가장 잘 안맞는 MBTI는? : ESFP")
+#     elif m == "E" and b == "S" and t == "F" and i == "J":
+#         print("▷ ESFJ_친선도모형 : 친절, 현실감을 바탕으로 타인에게 봉사\n▷ 나와 가장 잘 맞는 MBTI는? : INTP\n▷ 나와 가장 잘 안맞는 MBTI는? : INTJ")
+#     elif m == "I" and b == "S" and t == "T" and i == "J":
+#         print("▷ ISTJ_소금형 : 한번 시작한 일은 끝까지 해내는 성격\n▷ 나와 가장 잘 맞는 MBTI는? : ENFP\n▷ 나와 가장 잘 안맞는 MBTI는? : ENFJ")
+#     elif m == "I" and b == "S" and t == "F" and i == "J":
+#         print("▷ ISFJ_권력형 : 성실하고 온화하며 협조를 잘하는 사람\n▷ 나와 가장 잘 맞는 MBTI는? : ENTP\n▷ 나와 가장 잘 안맞는 MBTI는? : ENTJ")
+#     elif m == "E" and b == "N" and t == "F" and i == "J":
+#         print("▷ ENFJ_언변능숙형 : 타인의 성장을 도모하고 협동하는 사람\n▷ 나와 가장 잘 맞는 MBTI는? : ISTP\n▷ 나와 가장 잘 안맞는 MBTI는? : ISTJ")
+#     elif m == "E" and b == "N" and t == "F" and i == "P":
+#         print("▷ ENFP_스파크형 : 열정적으로 새 관계를 만드는 사람\n▷ 나와 가장 잘 맞는 MBTI는? : ISTJ\n▷ 나와 가장 잘 안맞는 MBTI는? : ISTP")
+#     elif m == "I" and b == "N" and t == "F" and i == "J":
+#         print("▷ INFJ_예언자형 : 사람에 관한 뛰어난 통찰력을 가진 사람\n▷ 나와 가장 잘 맞는 MBTI는? : ESTP\n▷ 나와 가장 잘 안맞는 MBTI는? : ESTJ")
+#     elif m == "I" and b == "N" and t == "F" and i == "P":
+#         print("▷ INFP_잔다르크형 : 이상적인 세상을 만들어가는 사람들\n▷ 나와 가장 잘 맞는 MBTI는? : ESTJ\n▷ 나와 가장 잘 안맞는 MBTI는? : ESTP")
+#     elif m == "E" and b == "S" and t == "T" and i == "P":
+#         print("▷ ESTP_활동가형 : 친구, 운동, 음식 등 다양함을 선호\n▷ 나와 가장 잘 맞는 MBTI는? : INFJ\n▷ 나와 가장 잘 안맞는 MBTI는? : INFP")
+#     elif m == "E" and b == "S" and t == "F" and i == "P":
+#         print("▷ ESFP_사교형 : 분위기를 고조시키는 우호적인 성격\n▷ 나와 가장 잘 맞는 MBTI는? : INTJ\n▷ 나와 가장 잘 안맞는 MBTI는? : INTP")
+#     elif m == "I" and b == "S" and t == "T" and i == "P":
+#         print("▷ ISTP_백과사전형 : 논리적이고 뛰어난 상황 적응력\n▷ 나와 가장 잘 맞는 MBTI는? : ENFJ\n▷ 나와 가장 잘 안맞는 MBTI는? : ENFP")
+#     elif m == "I" and b == "S" and t == "F" and i == "P":
+#         print("▷ ISFP_성인군자형 : 따뜻한 감성을 가지고 있는 겸손한 사람\n▷ 나와 가장 잘 맞는 MBTI는? : ENTJ\n▷ 나와 가장 잘 안맞는 MBTI는? : ENTP")
+
+
 def main():
     app = tkinterApp()
     app.mainloop()
