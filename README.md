@@ -35,6 +35,7 @@ mbti_text = ''
       self.mbti_text += "E"
   elif I >= 2:
       self.mbti_text += "I"
+```      
 radiobutton 위젯에서 결정된 value값을 통해 3개중 다수의 항목을 결정, mbti_text 값에 넣은 후 출력한다.    
 
 MBTI 부연설명 출력하기
