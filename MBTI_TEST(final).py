@@ -28,7 +28,7 @@ class Mbti:
         self.r1 = Radiobutton(self.top, text="1. 나는 새로운 사람을 만나도 어색하지 않다.", variable=self.q1, value=1)
         self.r1.grid(row=1, column=1)
 
-        self.r2 = Radiobutton(self.top, text="2. 나는 모르는 사람을 만나는 일이 곤하다.", variable=self.q1, value=2)
+        self.r2 = Radiobutton(self.top, text="2. 나는 모르는 사람을 만나는 일이 피곤하다.", variable=self.q1, value=2)
         self.r2.grid(row=2, column=1)
 
         self.line1 = Label(text="-----------------------------------------------------------------------------------")
