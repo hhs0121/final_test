@@ -8,14 +8,15 @@
  self.r1 = Radiobutton(self.top, text="1. 나는 새로운 사람을 만나도 어색하지 않다.", variable=self.q1, value=1)
  self.r1.grid(row=1, column=1)
 ```
-각 질문당 한개의 value를 설정하고, 두 문항중 결정된 하나의 value를 variable값으로 설정한다.
+문제는 총 12문제로, 한 문제당 2개의 선택지가 존재한다.     
+하나의 선택지당 하나의 value값을 설정한 후, 선택된 value값을 해당 문제의 variable항목에 넣어준다.
 
 ### MBTI 결정하기
 ```c
+a1 = a1.get()
 E = 0
 I = 0
-mbti_text = ''
-a1 = q1.get()
+mbti_tex
 
   if a1 == 1:
       E += 1
@@ -37,7 +38,7 @@ a1 = q1.get()
   elif I >= 2:
       self.mbti_text += "I"
 ```      
-radiobutton 위젯에서 결정된 value값을 통해 3개중 다수의 항목을 결정, mbti_text 값에 넣은 후 출력한다.    
+radiobutton 위젯에서 결정된 value값을 비교하여 숫자로 치환한 후 각 유형에 더해주는 방식을 사용, 둘 중 값이 더 큰 유형을 선택해 mbti_text 값에 넣은 후 출력한다.
 
 ### MBTI 부연설명 출력하기
 ```c
@@ -46,4 +47,4 @@ explain=''
  if mbti_text == "ESTJ":
       explain += "▷ 사업가형: 사무적, 실용적, 현실적인 스타일 \n▷ 나와 가장 잘 맞는 MBTI는?: INFP \n▷ 나와 가장 잘 안맞는 MBTI는?: INFJ"
 ```           
-결정된 mbti와 같은 설명문을 찾은 후, explain 값에 넣은 후 출력한다.
+결정된 mbti와 같은 설명문을 찾은 후, explain 값에 넣고 출력한다.
