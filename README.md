@@ -15,6 +15,7 @@ MBTI 결정하기
 E = 0
 I = 0
 mbti_text = ''
+a1 = q1.get()
 
   if a1 == 1:
       E += 1
