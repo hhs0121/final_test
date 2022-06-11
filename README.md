@@ -19,7 +19,7 @@ self.r2.grid(row=2, column=1)
 a1 = a1.get()
 E = 0
 I = 0
-mbti_tex
+mbti_text = ''
 
 if a1 == 1:
     E += 1
@@ -41,7 +41,7 @@ if E >= 2:
 elif I >= 2:
     self.mbti_text += "I"
 ```      
-radiobutton 위젯에서 결정된 value값을 비교하여 숫자로 치환한 후 각 유형에 더해주는 방식을 사용, 둘 중 값이 더 큰 유형을 선택해 mbti_text 값에 넣은 후 출력한다.
+radiobutton 위젯에서 결정된 value값을 비교하여 선택된 유형에 1씩 더해주는 방식을 사용, 둘 중 값이 더 큰 유형을 선택해 mbti_text 값에 넣은 후 출력한다.
 
 ### MBTI 부연설명 출력하기
 ```c
