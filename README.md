@@ -15,7 +15,7 @@ self.r2.grid(row=2, column=1)
 
 ### MBTI 결정하기
 ```c
-a1 = a1.get()
+a1 = q1.get()
 E = 0
 I = 0
 mbti_text = ''
