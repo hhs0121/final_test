@@ -15,6 +15,7 @@ class Mbti:
 
     def __init__(self):
         self.top = Tk()
+        self.top.title("mbti test")
 
         self.lb = Label(text="MBTI test with PYTHON", font=self.LARGEFONT)
         self.lb.grid(row=0, column=1)
@@ -202,11 +203,17 @@ class Mbti:
         self.result_btn = Button(self.top, text="결과 보기", command=self.results)
         self.result_btn.grid(row=37, column=1)
 
+        self.finish_btn = Button(self.top, text="끝내기", command=self.quit)
+        self.finish_btn.grid(row=37, column=2)
+
         self.result = Label(text='')
         self.result.grid(row=38)
 
         self.explain = Label(text='')
         self.explain.grid(row=39)
+
+    def quit(self):
+        self.top.destroy()
 
     def answer(self, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12) -> str:
         E = 0
@@ -364,4 +371,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
